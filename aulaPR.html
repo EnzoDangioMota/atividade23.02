@@ -22,6 +22,7 @@
 
         main {
             padding: 20px;
+            margin-bottom: 120px;
         }
 
         footer {
@@ -48,12 +49,13 @@
             background-color: #45a049;
         }
 
-        #form-contato input{
+        #form-contato input {
             padding: 10px;
             width: 20vw;
             border-radius: 10px;
             border: 0.5px solid lightgrey;
         }
+
         #form-contato button {
             padding: 10px;
             border-radius: 10px;
@@ -61,6 +63,42 @@
             color: #143916;
             font-weight: bold;
             border: none;
+        }
+
+        .valores {
+            max-width: 800px;
+            margin: 60px auto;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .valores h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .valores ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        .valores li {
+            background: #f4f6f8;
+            padding: 18px;
+            border-radius: 10px;
+            font-weight: 600;
+            color: #444;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .valores li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
         }
     </style>
 </head>
@@ -89,7 +127,7 @@
 
         <button class="btn">Clique aqui para aprender mais!</button>
 
-        <section>
+        <section class="valores">
             <h2>Nossos valores</h2>
             <ul>
                 <li>Atitude de Dono</li>
@@ -106,7 +144,8 @@
     <footer>
         <p>&copy; 2025 Projeto GitHub PR - Todos os direitos reservados.</p>
         <form id="form-contato">
-            <input type="text" name="contato" id="contato" placeholder="Envie nosso contato"> <button type="submit">Enviar</button>
+            <input type="text" name="contato" id="contato" placeholder="Envie nosso contato"> <button
+                type="submit">Enviar</button>
         </form>
     </footer>
 
